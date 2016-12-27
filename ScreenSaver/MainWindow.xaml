@@ -1,0 +1,45 @@
+﻿<Window x:Class="ScreenSaver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="MasterWindow" Height="768" Width="1024" ShowInTaskbar="False" Topmost="True" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="Black" Loaded="Window_Loaded" MouseMove="Window_MouseMove" MouseUp="Window_MouseUp" ResizeMode="NoResize" WindowState="Maximized">
+	<Window.Resources>
+		<Storyboard x:Key="Blink" RepeatBehavior="Forever">
+			<DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="lblDay">
+				<SplineDoubleKeyFrame KeyTime="0" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:0.2" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:1.8" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="0:0:2.2" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</Window.Resources>
+	<Window.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource Blink}"/>
+		</EventTrigger>
+	</Window.Triggers>
+    <Viewbox>
+		<Grid Height="768" Width="1024">
+			<TextBlock x:Name="lblTitle" Margin="50.516,0,50.516,59.218" TextWrapping="Wrap" Text="" FontSize="72" Foreground="Red" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform Y="-153"/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+			<TextBlock x:Name="lblDay" Margin="219.157,0,230.157,21.375" TextWrapping="Wrap" Text="" FontSize="72" Foreground="Red" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.5" FontWeight="Bold">
+				<TextBlock.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform Y="110"/>
+					</TransformGroup>
+				</TextBlock.RenderTransform>
+			</TextBlock>
+            <Image x:Name="imgCompanyLogo" Margin="219.157,-648,230.157,21.375" VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Height="200"/>
+		</Grid>
+	</Viewbox>
+</Window>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenSaver", "ScreenSaver\ScreenSaver.csproj", "{24A879D3-FAE6-41E1-80AC-9605087A15F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPicker", "ColorPicker\ColorPicker.csproj", "{059DC6C7-59C6-4ADF-8960-976A02E7498E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorPickerControls", "ColorPickerControls\ColorPickerControls.csproj", "{02E6C16F-757F-44AC-BE66-C0D79C0EBE0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24A879D3-FAE6-41E1-80AC-9605087A15F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24A879D3-FAE6-41E1-80AC-9605087A15F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24A879D3-FAE6-41E1-80AC-9605087A15F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24A879D3-FAE6-41E1-80AC-9605087A15F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{059DC6C7-59C6-4ADF-8960-976A02E7498E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{059DC6C7-59C6-4ADF-8960-976A02E7498E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{059DC6C7-59C6-4ADF-8960-976A02E7498E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{059DC6C7-59C6-4ADF-8960-976A02E7498E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02E6C16F-757F-44AC-BE66-C0D79C0EBE0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E6C16F-757F-44AC-BE66-C0D79C0EBE0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E6C16F-757F-44AC-BE66-C0D79C0EBE0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E6C16F-757F-44AC-BE66-C0D79C0EBE0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
