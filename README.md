@@ -1,1 +1,1 @@
-# EventScreenSavor
+# Event based screen saver
